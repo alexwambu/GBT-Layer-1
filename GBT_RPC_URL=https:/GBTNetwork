@@ -1,0 +1,14 @@
+5. Vercel will auto-detect the build system and deploy.
+
+---
+
+## 🔌 API Endpoints
+
+- `/api/get-balance?address=0x...`
+- `/api/send-tx` (POST with `{ "signedTx": "0x..." }`)
+
+---
+
+## 🧾 License
+
+MIT
