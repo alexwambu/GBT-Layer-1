@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api_get_balance.py", "use": "@vercel/python" },
+    { "src": "api_send_tx.py", "use": "@vercel/python" },
+    { "src": "package.json", "use": "@vercel/next" }
+  ],
+  "routes": [
+    { "src": "/api/get-balance", "dest": "/api_get_balance.py" },
+    { "src": "/api/send-tx", "dest": "/api_send_tx.py" },
+    { "src": "/(.*)", "dest": "/" }
+  ]
+}
